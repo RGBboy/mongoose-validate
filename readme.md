@@ -26,9 +26,27 @@ NewSchema = new Schema({
 
 ```
 
-### Email
+### .email
 
 Validates an email.
+
+### .alpha
+
+Validates any alpha character (a-z, A-Z).
+
+### .alphanumeric
+
+Validates any alphanumeric character (a-z, A-Z, 0-9).
+
+### .numeric
+
+Validates any numeric character (0-9).
+
+### .postalcode
+
+Validates a postal code. The validation accepts any alphanumeric string with a single hyphen
+or space that is at least 3 characters in length and no more than 10 characters in length.
+The valid postal code format was found at http://en.wikipedia.org/wiki/Postal_code
 
 ## To Do
 

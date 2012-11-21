@@ -42,7 +42,7 @@ Validates any alphanumeric character (a-z, A-Z, 0-9).
 
 Validates any numeric character (0-9).
 
-### .postalcode
+### .postalCode
 
 Validates a postal code. The validation accepts any alphanumeric string with a single hyphen
 or space that is at least 3 characters in length and no more than 10 characters in length.

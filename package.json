@@ -1,0 +1,24 @@
+{
+  "name": "mongoose-validate",
+  "version": "0.0.1",
+  "description": "Additional Validation functions for your mongoose schema.",
+  "homepage": "https://github.com/RGBboy/mongoose-validate",
+  "keywords": ["mongoose", "mongodb", "validation", "security"],
+  "author": "RGBboy <me@rgbboy.com>",
+  "main": "index",
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "validator": "0.4.x",
+  },
+  "devDependencies": {
+    "mocha": "1.5.x",
+    "should": "1.2.x"
+  },
+  "scripts" : {
+    "test" : "make test",
+    "unit" : "make unit",
+    "spec" : "make spec"
+  }
+}

@@ -10,7 +10,7 @@
     "node": "0.8.x"
   },
   "dependencies": {
-    "validator": "0.4.x",
+    "validator": "0.4.x"
   },
   "devDependencies": {
     "mocha": "1.5.x",

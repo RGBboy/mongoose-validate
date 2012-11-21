@@ -25,8 +25,8 @@ describe('Validate', function () {
 
     it('should return false for an invalid email', function (done) {
       validate.email('testtest.com').should.be.false;
-      validate.email('test@test.').should.be.true;
-      validate.email('test@test').should.be.true;
+      validate.email('test@test.').should.be.false;
+      validate.email('test@test').should.be.false;
       validate.email('test@.com').should.be.false;
       validate.email('test.com').should.be.false;
       validate.email('test').should.be.false;

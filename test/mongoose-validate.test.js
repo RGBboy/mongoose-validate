@@ -87,35 +87,35 @@ describe('Validate', function () {
 
   });
 
-  describe('.postalcode', function () {
+  describe('.postalCode', function () {
 
     it('should return true for valid value', function (done) {
       // longest (10 characters)
-      validate.postalcode('a1a1a1a1a1').should.be.true;
+      validate.postalCode('a1a1a1a1a1').should.be.true;
       // shortest (3 characters)
-      validate.postalcode('a1a').should.be.true;
+      validate.postalCode('a1a').should.be.true;
       // all alpha
-      validate.postalcode('aaaaaa').should.be.true;
+      validate.postalCode('aaaaaa').should.be.true;
       // all numeric
-      validate.postalcode('111111').should.be.true;
+      validate.postalCode('111111').should.be.true;
       // contains single space
-      validate.postalcode('a1a 1a1').should.be.true;
+      validate.postalCode('a1a 1a1').should.be.true;
       // contains single hyphen
-      validate.postalcode('a1a-1a1').should.be.true;
+      validate.postalCode('a1a-1a1').should.be.true;
       done();
     });
 
     it('should return false for invalid value', function (done) {
       // too long
-      validate.postalcode('a1a1a1a1a1a').should.be.false;
+      validate.postalCode('a1a1a1a1a1a').should.be.false;
       // too short
-      validate.postalcode('a1').should.be.false;
+      validate.postalCode('a1').should.be.false;
       // too many spaces and hyphens
-      validate.postalcode('a1a  1a1').should.be.false;
-      validate.postalcode('a1a--1a1').should.be.false;
-      validate.postalcode('a1a -1a1').should.be.false;
+      validate.postalCode('a1a  1a1').should.be.false;
+      validate.postalCode('a1a--1a1').should.be.false;
+      validate.postalCode('a1a -1a1').should.be.false;
       // invalid character
-      validate.postalcode('a1a.1a1').should.be.false;
+      validate.postalCode('a1a.1a1').should.be.false;
       done();
     });
 

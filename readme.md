@@ -48,6 +48,10 @@ Validates a postal code. The validation accepts any alphanumeric string with a s
 or space that is at least 3 characters in length and no more than 10 characters in length.
 The valid postal code format was found at http://en.wikipedia.org/wiki/Postal_code
 
+### .permalink
+
+Validates a permalink. The validation accepts any lowercase alphanumeric characters and hyphens.
+
 ## To Do
 
   * Write tests;

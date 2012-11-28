@@ -121,4 +121,25 @@ describe('Validate', function () {
 
   });
 
+  describe('.permalink', function () {
+
+    it('should return true for valid value', function (done) {
+      validate.permalink('a').should.be.true;
+      validate.permalink('1').should.be.true;
+      validate.permalink(1).should.be.true;
+      validate.permalink('-').should.be.true;
+      validate.permalink('a1-a1').should.be.true;
+      done();
+    });
+
+    it('should return false for invalid value', function (done) {
+      validate.permalink('').should.be.false;
+      validate.permalink(' ').should.be.false;
+      validate.permalink('A').should.be.false;
+      validate.permalink('/').should.be.false;
+      done();
+    });
+
+  });
+
 });

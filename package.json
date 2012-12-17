@@ -5,6 +5,10 @@
   "homepage": "https://github.com/RGBboy/mongoose-validate",
   "keywords": ["mongoose", "mongodb", "validation", "security"],
   "author": "RGBboy <me@rgbboy.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/RGBboy/mongoose-validate"
+  },
   "main": "index",
   "engines": {
     "node": "0.8.x"

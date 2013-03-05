@@ -1,6 +1,6 @@
 {
   "name": "mongoose-validate",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Additional Validation functions for your mongoose schema.",
   "homepage": "https://github.com/RGBboy/mongoose-validate",
   "keywords": ["mongoose", "mongodb", "validation", "security"],

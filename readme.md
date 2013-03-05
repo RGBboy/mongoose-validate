@@ -42,6 +42,10 @@ Validates any alphanumeric character (a-z, A-Z, 0-9).
 
 Validates any numeric character (0-9).
 
+### .int
+
+Validates any whole number e.g -1, 0 or 1.
+
 ### .postalCode
 
 Validates a postal code. The validation accepts any alphanumeric string with a single hyphen

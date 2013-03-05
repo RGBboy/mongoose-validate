@@ -58,5 +58,4 @@ Validates a permalink. The validation accepts any lowercase alphanumeric charact
 
 ## To Do
 
-  * Write tests;
   * Add other validation;

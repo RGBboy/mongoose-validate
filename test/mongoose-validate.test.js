@@ -87,6 +87,33 @@ describe('Validate', function () {
 
   });
 
+  describe('.int', function () {
+
+    it('should return true for valid value', function (done) {
+      validate.int('1').should.be.true;
+      validate.int(1).should.be.true;
+      validate.int('0').should.be.true;
+      validate.int(0).should.be.true;
+      validate.int('-1').should.be.true;
+      validate.int(-1).should.be.true;
+      done();
+    });
+
+    it('should return false for invalid value', function (done) {
+      validate.int('a').should.be.false;
+      validate.int(' ').should.be.false;
+      validate.int('.').should.be.false;
+      validate.int('1.5').should.be.false;
+      validate.int(1.5).should.be.false;
+      validate.int('0.5').should.be.false;
+      validate.int(0.5).should.be.false;
+      validate.int('-1.5').should.be.false;
+      validate.int(-1.5).should.be.false;
+      done();
+    });
+
+  });
+
   describe('.postalCode', function () {
 
     it('should return true for valid value', function (done) {
